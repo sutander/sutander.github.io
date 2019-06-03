@@ -1,0 +1,285 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	color:#fff;
+	width: 100%;
+	height: 100%;
+	background-image:url(bg.jpg); /* Путь к фоновому изображению */
+	background-size: 100% 100%;
+    background-repeat:repeat-y;
+}
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 50px;
+	background: blue;
+	width:1000px;
+	position: fixed;
+	opacity: 0.5;
+	z-index: 100;
+	
+}
+.header:hover{opacity: 0.9;}
+/* navigation  */
+nav{
+  width:960px;
+  margin:0 auto;
+
+}
+nav:before{
+  content:"";
+  display:block;
+  height:50px;
+  width:100%;
+  background:#000;
+  position:absolute;
+  left:0;
+  z-index:-1;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  height:50px;
+}
+ul li{
+  float:left;
+}
+ul li a{
+  color:#fff;
+  display:block;
+  height:50px;
+  padding:0 30px;
+  text-transform:uppercase;
+  text-decoration:none;
+  line-height:50px;
+}
+ul li a:hover{
+  background:#000;
+}
+/* navigation end*/
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	padding: 10px 0 50px;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 0 0 270px;
+}
+.circle {
+	
+}
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	float: left;
+	width: 250px;
+	margin-top: 50px;
+	margin-left: -100%;
+	position: relative;
+	background: black;
+	z-index: -2;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	width: 100%;
+	margin: 50px auto 0;
+	height: 200px;
+	background: #BFF08E;
+	background-image:url(foot.jpg); /* Путь к фоновому изображению */
+    background-repeat:no-repeat;
+	position: relative;
+}
+#circle {
+      width: 200px;
+	  height: 200px;
+	  border-radius: 50%;
+	  font-size: 30px;
+	  color: #000;
+	  line-height: 200px;
+	  text-align: center;
+	  background: #8bb1b7;
+	  background-image:url(chan8.jpg);
+	  margin-left: 50px;
+	  z-index: -5;
+}
+
+#circle2 {
+      width: 200px;
+	  height: 200px;
+	  border-radius: 50%;
+	  font-size: 30px;
+	  color: #ff07cd;
+	  line-height: 200px;
+	  text-align: center;
+	  background: #8bb1b7;
+	  background-image:url(chan5.jpg);
+	  background-repeat:round; 
+
+	  margin-left: 50px;
+	  z-index: -5;
+
+}
+#circle3 {
+      width: 200px;
+	  height: 200px;
+	  border-radius: 50%;
+	  font-size: 30px;
+	  color: #fff;
+	  line-height: 200px;
+	  text-align: center;
+	  background: #8bb1b7;
+	  background-image:url(chan3.jpg);
+	  background-repeat:round; 
+	  margin-left: 50px;
+	  z-index: -5;
+
+}
+
+
+.contents{
+	display:inline;
+	position:absolute;
+
+}
+.parent
+{
+	/*border: 1px solid black;*/
+	height: 200px;
+}
+.child
+{
+	height: 100px;
+	display: inline-block;
+
+	width: 30%;
+}
+.parent2
+{
+	/*border: 1px solid black;*/
+	height: 300px;
+}
+.child2
+{
+	height: 300px;
+	display: inline-block;
+	/*border: 1px solid black;*/
+	width: 30%;
+}
+.hot{
+	
+
+    width: 220px; /* Ширина рисунка */
+    height: 250px; /*  Высота рисунка */
+}
+.hot:hover {
+	
+	opacity: 0.5;
+	border:5px solid  #FF4500;  
+	
+	}
+.scren{width:60px;
+	opacity: 0.5;
+	margin-right: 0px;
+
+}
+.scren:hover{
+	opacity: 1;
+}
+.screp  {width:50px;
+			height: 50px}
+.screp  :hover {
+	width:53px;
+	height: 53px;
+
+	}
+.screp img  {width:50px;
+			height: 50px}
+.screp img:hover {
+	width:50px;
+	border:3px solid #33FF00;
+	border-radius: 50% 50%;
+		
+	}
+
+.heelo{float:left;
+		margin: 7px 7px 7px 0; }
+
+
